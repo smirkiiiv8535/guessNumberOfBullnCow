@@ -36,7 +36,7 @@ class gameViewController: UIViewController {
     // 生成隨機 4A 的數值
     func createNum(){
         var loadingNum = 0
-        for _ in 0...3{
+        for i in 0...3{
             loadingNum = Int.random(in:0...numberMap.count-1)
             let pickNum = numberMap.remove(at: loadingNum)
             answerArray.append(pickNum)
@@ -54,13 +54,13 @@ class gameViewController: UIViewController {
         present(mainAlert, animated: true, completion: nil)
     }
     
-    //
+    // 顯示正確答案
     func correctNumber(){
         finalText.isHidden = false
         finalText.text = "\(answerArray[0])"+"\(answerArray[1])"+"\(answerArray[2])"+"\(answerArray[3])"
     }
     
-    
+    // 顯示下方提示數值
     func refernceTip(typeNum:String,aNum : Int, bNum: Int){
         let historyNum = "\(typeNum) \n"
         let howMuchAB = "\(aNum) a \(bNum) b \n"
@@ -70,7 +70,7 @@ class gameViewController: UIViewController {
     }
     
     
-    
+    // 點選提交鍵的動作
     @IBAction func checkButton(_ sender: UIButton) {
         if let textfieldHasTypeInt = typeText.text{
             if textfieldHasTypeInt.count == 4{
@@ -112,7 +112,7 @@ class gameViewController: UIViewController {
     
     
     
-    
+    // 點選重玩鍵
     @IBAction func restartButton(_ sender: UIButton) {
         times = 0
         timesLabel.text = "\(times) 次"
@@ -123,6 +123,7 @@ class gameViewController: UIViewController {
         cleanOldAnswer()
     }
     
+     // 清除數值紀錄
     func cleanOldAnswer(){
         numberMap = ["0","1","2","3","4","5","6","7","8","9"]
         answerArray = [String]()
