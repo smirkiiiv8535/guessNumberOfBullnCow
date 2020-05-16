@@ -13,6 +13,7 @@
 		17F432CF246D1D520054589B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F432CD246D1D520054589B /* Main.storyboard */; };
 		17F432D1246D1D530054589B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F432D0246D1D530054589B /* Assets.xcassets */; };
 		17F432D4246D1D530054589B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F432D2246D1D530054589B /* LaunchScreen.storyboard */; };
+		17F432DC246D1DCF0054589B /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F432DB246D1DCF0054589B /* gameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		17F432D0246D1D530054589B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F432D3246D1D530054589B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17F432D5246D1D530054589B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F432DB246D1DCF0054589B /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				17F432C9246D1D520054589B /* SceneDelegate.swift */,
 				17F432CB246D1D520054589B /* ViewController.swift */,
 				17F432CD246D1D520054589B /* Main.storyboard */,
+				17F432DB246D1DCF0054589B /* gameViewController.swift */,
 				17F432D0246D1D530054589B /* Assets.xcassets */,
 				17F432D2246D1D530054589B /* LaunchScreen.storyboard */,
 				17F432D5246D1D530054589B /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F432DC246D1DCF0054589B /* gameViewController.swift in Sources */,
 				17F432CC246D1D520054589B /* ViewController.swift in Sources */,
 				17F432C8246D1D520054589B /* AppDelegate.swift in Sources */,
 				17F432CA246D1D520054589B /* SceneDelegate.swift in Sources */,
